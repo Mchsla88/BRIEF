@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktywny Kwestionariusz Briefingowy B2B</title>
+    <title>Brief Prospecting B2B</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="container mx-auto p-4 md:p-8 max-w-4xl">
-        <header class="text-center mb-8"><h1 class="text-3xl md:text-4xl font-bold text-gray-800">Kwestionariusz Briefingowy B2B</h1></header>
+        <header class="text-center mb-8"><h1 class="text-3xl md:text-4xl font-bold text-gray-800">Brief Prospecting B2B</h1></header>
         <form id="brief-form">
             <div class="form-section">
                 <h2 class="section-title">1. Podstawowe informacje o firmie</h2>
@@ -62,7 +62,7 @@
             <div class="form-section"><h2 class="section-title">4. Cele i Oczekiwania</h2><div><label class="form-label">Główny, nadrzędny cel współpracy</label><input type="text" name="Główny cel współpracy" class="form-input" placeholder="np. pozyskanie 10 nowych klientów w Q3"></div><div class="mt-6"><label class="form-label">Kluczowe wskaźniki sukcesu (KPIs)</label><input type="text" name="Kluczowe wskaźniki sukcesu (KPIs)" class="form-input" placeholder="np. liczba umówionych spotkań miesięcznie"></div><div class="mt-6"><label class="form-label">Dotychczasowe doświadczenia z prospectingiem</label><textarea name="Doświadczenia z prospectingiem" class="form-textarea" placeholder="Co działało dobrze, a co nie?"></textarea></div></div>
             <div class="form-section"><h2 class="section-title">5. Konkurencja i Rynek</h2><div><label class="form-label">Główni konkurenci (2-3 firmy)</label><input type="text" name="Główni konkurenci" class="form-input"></div><div class="mt-6"><label class="form-label">Mocne i słabe strony oferty vs konkurencja</label><textarea name="Mocne i słabe strony vs konkurencja" class="form-textarea"></textarea></div></div>
             <div class="form-section"><h2 class="section-title">6. Obecne działania marketingowe</h2><div><label class="form-label">Jaki jest miesięczny budżet na reklamy (Ad Spend)?</label><input type="text" name="Budżet reklamowy" class="form-input"></div><div class="mt-6"><label class="form-label">Czy w firmie jest dedykowana osoba/dział marketingu?</label><input type="text" name="Osoba od marketingu" class="form-input"></div><div class="mt-6"><label class="form-label">Jak regularnie publikują Państwo treści (posty, artykuły)?</label><input type="text" name="Regularność publikacji" class="form-input"></div></div>
-            <div class="form-section"><h2 class="section-title">7. Kwestie techniczne i operacyjne</h2><div><label class="form-label">Z jakich kluczowych narzędzi (CRM, Marketing Automation) Państwo korzystają?</label><input type="text" name="Używane narzędzia" class="form-input" placeholder="np. HubSpot, Pipedrive, Salesmanago"></div><div class="mt-6"><label class="form-label">Główna osoba do kontaktu</label><input type="text" name="Osoba do kontaktu" class="form-input"></div><div class="mt-6"><label class="form-label">Czy posiadają Państwo materiały marketingowe?</label><input type="text" name="Materiały marketingowe" class="form-input" placeholder="np. studia przypadków, prezentacje"></div></div>
+            <div class="form-section"><h2 class="section-title">7. Kwestie techniczne i operacyjne</h2><div><label class="form-label">Z jakich kluczowych narzędzi (CRM, Marketing Automation) Państwo korzystają?</label><input type="text" name="Używane narzędzia" class="form-input" placeholder="np. HubSpot, Pipedrive, Salesmanago"></div><div class="mt-6"><label class="form-label">Główna osoba do kontaktu</label><input type="text" name="Osoba do kontaktu" class="form-input"></div><div class="mt-6"><label class="form-label">Adres email</label><input type="text" name="Materiały marketingowe" class="form-input" placeholder="np. studia przypadków, prezentacje"></div></div>
             <div class="mt-8"><button type="submit" id="submit-btn" class="btn btn-primary w-full text-lg flex items-center justify-center"><svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" id="submit-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span id="submit-btn-text">Wyślij Brief Automatycznie</span></button></div>
         </form>
         <div id="response-modal" class="modal-overlay"><div class="modal-content" id="modal-content-inner"></div></div>
